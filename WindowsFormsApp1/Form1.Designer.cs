@@ -54,9 +54,9 @@
             // 
             // pnlLetters
             // 
-            this.pnlLetters.Location = new System.Drawing.Point(156, 113);
+            this.pnlLetters.Location = new System.Drawing.Point(1, 12);
             this.pnlLetters.Name = "pnlLetters";
-            this.pnlLetters.Size = new System.Drawing.Size(390, 130);
+            this.pnlLetters.Size = new System.Drawing.Size(801, 435);
             this.pnlLetters.TabIndex = 2;
             // 
             // JumbleSolver

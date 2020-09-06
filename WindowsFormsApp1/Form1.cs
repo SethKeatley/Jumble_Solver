@@ -19,6 +19,7 @@ namespace WindowsFormsApp1
         public JumbleSolver()
         {
             InitializeComponent();
+            pnlLetters.Hide();
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
@@ -26,16 +27,16 @@ namespace WindowsFormsApp1
             numLetters = int.Parse(txtNumLetters.Text);
             txtNumLetters.Hide();
             btnConfirm.Hide();
+            pnlLetters.Show();
 
-
-            for(int i = 0; i <= numLetters; i++)
+            for(int i = 1; i <= numLetters; i++)
             {
                 TextBox newTxt = new TextBox();
                 newTxt.Location = new System.Drawing.Point(txtBoxStartPosition, txtBoxStartPositionV);
                 newTxt.Size = new System.Drawing.Size(70, 40);
                 newTxt.Text = i.ToString();
 
-                pnlLetters.Add(newTxt);
+                pnlLetters.Controls.Add(newTxt);
                 txtBoxStartPositionV += 30;
             }
         }
